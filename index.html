@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Jewelers - Luxury Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Royal Jewelers</h1>
+    <p>Elegance in Every Stone</p>
+</header>
+
+<!-- HERO BANNER -->
+<section class="hero">
+    <h2>Timeless Jewelry for Timeless Moments</h2>
+    <button>Shop Collection</button>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Royal Jewelers</h2>
+    <p>For over 20 years, we have been crafting exquisite jewelry with 22K Gold, Real Diamonds and Precious Stones. 
+    Every piece is made with love, tradition and perfection.</p>
+</section>
+
+<!-- COLLECTION - YAHAN PICTURES KHUD AA JAYENGI -->
+<section class="collection">
+    <h2>Our Collection</h2>
+    <div class="products" id="product-list"></div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 0300-1234567 | 📍 Lahore, Pakistan</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Royal Jewelers. All Rights Reserved.</p>
+</footer>
+
+<script>
+// TUMHE SIRF YAHAN NAAM + PRICE ADD KARNA HAI
+const products = [
+    {name: "Diamond Ring", price: "Rs. 85,000", img: "https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg"},
+    {name: "Gold Necklace Set", price: "Rs. 1,50,000", img: "https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg"},
+    {name: "Diamond Studs", price: "Rs. 45,000", img: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg"},
+    {name: "Gold Bangles", price: "Rs. 60,000", img: "https://images.pexels.com/photos/1092736/pexels-photo-1092736.jpeg"},
+    {name: "Pearl Earrings", price: "Rs. 32,000", img: "https://images.pexels.com/photos/3735214/pexels-photo-3735214.jpeg"},
+    {name: "Bridal Set", price: "Rs. 2,50,000", img: "https://images.pexels.com/photos/192725/pexels-photo-192725.jpeg"}
+];
+
+const productList = document.getElementById('product-list');
+products.forEach(p => {
+    productList.innerHTML += `
+        <div class="product-card">
+            <img src="${p.img}">
+            <h3>${p.name}</h3>
+            <strong>${p.price}</strong>
+            <button>Shop Now</button>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>

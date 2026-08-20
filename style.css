@@ -1,0 +1,22 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Georgia', serif; background:#fffaf0; color:#333;}
+
+header {background: linear-gradient(to right, #d4af37, #b8860b); color:white; text-align:center; padding:40px;}
+header h1 {font-size:45px;}
+
+.hero {background:url('https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg') center/cover; color:white; text-align:center; padding:100px 20px;}
+.hero h2 {font-size:36px; margin-bottom:20px; text-shadow:2px 2px 4px black;}
+.hero button {background:#d4af37; color:white; border:none; padding:15px 30px; font-size:18px; border-radius:30px; cursor:pointer;}
+
+.about, .collection, .contact {padding:60px 20px; text-align:center;}
+.about h2, .collection h2, .contact h2 {font-size:32px; color:#b8860b; margin-bottom:20px;}
+
+.products {display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:30px;}
+.product-card {background:white; border:2px solid #d4af37; border-radius:20px; padding:20px; width:300px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:0.3s;}
+.product-card:hover {transform:translateY(-10px);}
+.product-card img {width:100%; height:280px; object-fit:cover; border-radius:15px;}
+.product-card h3 {color:#b8860b; margin:15px 0 10px;}
+.product-card strong {color:#d40000; font-size:20px;}
+.product-card button {background:#d4af37; color:white; border:none; padding:10px 25px; border-radius:25px; margin-top:10px; cursor:pointer;}
+
+footer {background:#333; color:white; text-align:center; padding:20px; margin-top:40px;}
